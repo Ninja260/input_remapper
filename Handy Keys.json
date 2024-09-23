@@ -47,5 +47,23 @@
         "output_symbol": "disable",
         "name": "Disable Capslock",
         "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 38,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Shift_L, key(semicolon))\n.key(e).key(c).key(h).key(o)\n.key(space)\n.modify(Shift_L, key(2)).modify(Shift_L, key(5))\n.key(Return)",
+        "name": "Echo current file full name with path",
+        "mapping_type": "key_macro"
     }
 ]
