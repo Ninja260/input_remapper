@@ -14,7 +14,7 @@
         ],
         "target_uinput": "keyboard",
         "output_symbol": "key(j).key(k)\n.key(j).\nrepeat(2, modify(Shift_L,key(comma)))\n.key(k)\n.repeat(2, key(d))\n.key(k)\n.modify(Shift_R, key(4))\n.key(a)\n.key(Return)",
-        "name": "Fix format problem",
+        "name": "VIM: Fix format problem",
         "mapping_type": "key_macro"
     },
     {
@@ -63,7 +63,7 @@
         ],
         "target_uinput": "keyboard",
         "output_symbol": "modify(Shift_L, key(semicolon))\n.key(e).key(c).key(h).key(o)\n.key(space)\n.modify(Shift_L, key(2)).modify(Shift_L, key(5))\n.key(Return)",
-        "name": "Echo current file full name with path",
+        "name": "VIM: Echo current file full name with path",
         "mapping_type": "key_macro"
     },
     {
