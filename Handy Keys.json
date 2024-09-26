@@ -31,8 +31,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "if_eq(\n\t$space,\n\t2,\n\tset(space, 1).modify(Super_L, key(1)),\n\tset(space, 2).modify(Super_L, key(2))\n)",
-        "name": "Toggle handy work spaces",
+        "output_symbol": "set(space3active, 0)\n.if_eq(\n\t$space,\n\t2,\n\tset(space, 1).modify(Super_L, key(1)),\n\tset(space, 2).modify(Super_L, key(2))\n)",
+        "name": "Toggle first workspace and second workspace",
         "mapping_type": "key_macro"
     },
     {
@@ -100,6 +100,114 @@
         "target_uinput": "keyboard",
         "output_symbol": "modify(Control_L, key(d))",
         "name": "VIM: Scroll half down",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 24,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(o))",
+        "name": "VIM: Jump to old cursor position",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 23,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(i))",
+        "name": "VIM: Jump to newer cursor position",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 50,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Shift_L, key(semicolon))\n.modify(Shift_L, key(f)).key(l).key(u).key(t).key(t).key(e).key(r)\n.modify(Shift_L, key(r)).key(e).key(l).key(o).key(a).key(d)\n.key(Return)",
+        "name": "VIM: Reload Flutter app",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 49,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Shift_L, key(semicolon))\n.modify(Shift_L, key(f)).key(l).key(u).key(t).key(t).key(e).key(r)\n.modify(Shift_L, key(r)).key(e).key(s).key(t).key(a).key(r).key(t)\n.key(Return)",
+        "name": "VIM: Restart Flutter App",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 51,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Shift_L, key(semicolon))\n.key(w)\n.key(Return)",
+        "name": "VIM: Save file",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 39,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "if_eq(\n\t$space,\n\t1,\n\telse=if_eq(\n\t\t$space,\n\t\t2,\n\t\telse=set(space, 1)\n\t)\n)\n.if_eq(\n\t$space3active,\n\t0,\n\tset(space3active, 1).modify(Super_L, key(3)),\n\tset(space3active, 0).modify(Super_L, key($space))\n)",
+        "name": "Toggle thrid workspace and recent workspace",
         "mapping_type": "key_macro"
     }
 ]
