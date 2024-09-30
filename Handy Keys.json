@@ -13,8 +13,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "key(j).key(k)\n.key(j).\nrepeat(2, modify(Shift_L,key(comma)))\n.key(k)\n.repeat(2, key(d))\n.key(k)\n.modify(Shift_R, key(4))\n.key(a)\n.key(Return)",
-        "name": "VIM: Fix format problem",
+        "output_symbol": "# Default, VIM: Fix format problem\nif_eq(\n\t$mode,\n\tNone,\n\tkey(Escape)\n\t.key(j).\n\trepeat(2, modify(Shift_L,key(comma)))\n\t.key(k)\n\t.repeat(2, key(d))\n\t.key(k)\n\t.modify(Shift_R, key(4))\n\t.key(a)\n\t.key(Return)\n)\n# Alacritty, Jump to left pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KP_Up))\n)\n# Lazy Window, Expend height\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).modify(Shift_L, key(equal))\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -31,8 +31,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "set(space3active, 0)\n.if_eq(\n\t$space,\n\t2,\n\tset(space, 1).modify(Super_L, key(1)),\n\tset(space, 2).modify(Super_L, key(2))\n)",
-        "name": "Toggle first workspace and second workspace",
+        "output_symbol": "# Default, Toggle first work space and second work space\nif_eq(\n\t$mode,\n\tNone,\n\tset(space3active, 0)\n\t.if_eq(\n\t\t$space,\n\t\t2,\n\t\tset(space, 1).modify(Super_L, key(1)),\n\t\tset(space, 2).modify(Super_L, key(2))\n\t)\n)\n# Alacritty, Jump to down pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KP_Down))\n)\n# Lazy Window, Shrink height\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).key(minus)\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -62,8 +62,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Shift_L, key(semicolon))\n.key(e).key(c).key(h).key(o)\n.key(space)\n.modify(Shift_L, key(2)).modify(Shift_L, key(5))\n.key(Return)",
-        "name": "VIM: Echo current file full name with path",
+        "output_symbol": "# Default, VIM: Echo current file full name with path\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Shift_L, key(semicolon))\n\t.key(e).key(c).key(h).key(o)\n\t.key(space)\n\t.modify(Shift_L, key(2)).modify(Shift_L, key(5))\n\t.key(Return)\n)\n# Alacritty, Jump to left pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KP_Right))\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -80,8 +80,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Control_L, key(u))",
-        "name": "VIM: Scroll half up",
+        "output_symbol": "# Default, VIM: Scroll half up\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Control_L, key(u))\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -98,8 +98,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Control_L, key(d))",
-        "name": "VIM: Scroll half down",
+        "output_symbol": "# Default, VIM: Scroll half down\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Control_L, key(d))\n)\n# Alacritty, Jump to left pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KP_Left))\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -116,8 +116,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Control_L, key(o))",
-        "name": "VIM: Jump to old cursor position",
+        "output_symbol": "# Default, VIM: Jump to old cursor position\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Control_L, key(o))\n)\n# Alacritty, Open a new pane in vertical split\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Control_L, key(p)).key(r)\n)\n# Lazy Window, Vertical split\n.if_eq(\n\t$mode,\n\t2,\n\tkey(space).key(w).key(v)\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -134,8 +134,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Control_L, key(i))",
-        "name": "VIM: Jump to newer cursor position",
+        "output_symbol": "# Default, VIM: Jump to newer cursor position\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Control_L, key(i))\n)\n# Alacritty, Open a new pane in horizontal split\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Control_L, key(p)).key(d)\n)\n# Lazy Window, Horizontal split\n.if_eq(\n\t$mode,\n\t2,\n\tkey(space).key(w).key(s)\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -152,8 +152,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Shift_L, key(semicolon))\n.modify(Shift_L, key(f)).key(l).key(u).key(t).key(t).key(e).key(r)\n.modify(Shift_L, key(r)).key(e).key(l).key(o).key(a).key(d)\n.key(Return)",
-        "name": "VIM: Reload Flutter app",
+        "output_symbol": "# Default, VIM: Reload Flutter app\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Shift_L, key(semicolon))\n\t.modify(Shift_L, key(f)).key(l).key(u).key(t).key(t).key(e).key(r)\n\t.modify(Shift_L, key(r)).key(e).key(l).key(o).key(a).key(d)\n\t.key(Return)\n)\n# Alacritty, Rename current tab\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Control_L, key(t)).key(r)\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -170,8 +170,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Shift_L, key(semicolon))\n.modify(Shift_L, key(f)).key(l).key(u).key(t).key(t).key(e).key(r)\n.modify(Shift_L, key(r)).key(e).key(s).key(t).key(a).key(r).key(t)\n.key(Return)",
-        "name": "VIM: Restart Flutter App",
+        "output_symbol": "# Default, VIM: Restart Flutter App\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Shift_L, key(semicolon))\n\t.modify(Shift_L, key(f)).key(l).key(u).key(t).key(t).key(e).key(r)\n\t.modify(Shift_L, key(r)).key(e).key(s).key(t).key(a).key(r).key(t)\n\t.key(Return)\n)\n# Alacritty, Create new tab\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Control_L, key(t)).key(n)\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -188,8 +188,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Shift_L, key(semicolon))\n.key(w)\n.key(Return)",
-        "name": "VIM: Save file",
+        "output_symbol": "# Default, VIM: Save file\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Shift_L, key(semicolon))\n\t.key(w)\n\t.key(Return)\n)\n# Alacritty, Shrink current pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(minus))\n)\n# Lazy Window, Shrink width\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).modify(Shift_L, key(comma))\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -206,8 +206,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "if_eq(\n\t$space,\n\t1,\n\telse=if_eq(\n\t\t$space,\n\t\t2,\n\t\telse=set(space, 1)\n\t)\n)\n.if_eq(\n\t$space3active,\n\t0,\n\tset(space3active, 1).modify(Super_L, key(3)),\n\tset(space3active, 0).modify(Super_L, key($space))\n)",
-        "name": "Toggle thrid workspace and recent workspace",
+        "output_symbol": "# Default, Toggle thrid workspace and recent workspace\nif_eq(\n\t$mode,\n\tNone,\n\tif_eq($space, None, set(space, 1))\n\t.if_eq(\n\t\t$space3active,\n\t\t1,\n\t\tset(space3active, 0).modify(Super_L, key($space)),\n\t\tset(space3active, 1).modify(Super_L, key(3))\n\t)\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -224,8 +224,8 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Control_L+key(p))",
-        "name": "Trigger Ctrl + p",
+        "output_symbol": "# Default, Trigger Ctrl + p\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Control_L,key(p))\n)\n# Alacritty, Toggle pop-up terminal\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Control_L, key(p)).key(w)\n)",
+        "name": "",
         "mapping_type": "key_macro"
     },
     {
@@ -242,8 +242,79 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "modify(Control_L, key(n))",
-        "name": "Trigger Ctrl + n",
+        "output_symbol": "# Default, Trigger Ctrl + n\nif_eq(\n\t$mode,\n\tNone, \n\tmodify(Control_L, key(n))\n)\n# Alacritty, Trigger Alacrity Lock\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Control_L, key(g))\n)",
+        "name": "",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 7,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "set(mode, None)",
+        "name": "Mode: Default",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 8,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "set(mode, 1)",
+        "name": "Mode: Alacritty",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 52,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "# Alacritty, Expend current pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(equal))\n)\n# Lazy Window, Shrink width\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).modify(Shift_L, key(period))\n)",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 9,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "set(mode, 2)",
+        "name": "Mode: Lazy Window",
         "mapping_type": "key_macro"
     }
 ]
