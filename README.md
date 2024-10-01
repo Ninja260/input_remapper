@@ -45,10 +45,10 @@ only.
 | `Super + p` | Toggle Alacritty's floating terminal |
 | `Super + i` | Open new pane in horizontal split    |
 | `Super + o` | Open new pane in vertical split      |
-| `Super + h` | Jump to the pane on left             |
-| `Super + l` | Jump to the pane on right            |
-| `Super + k` | Jump to the pane down                |
-| `Super + j` | Jump to the pane up                  |
+| `Super + h` | Jump to the left pane or tab         |
+| `Super + l` | Jump to the right pane or tab        |
+| `Super + k` | Jump to the down pane                |
+| `Super + j` | Jump to the top pane                 |
 
 ## Lazyvim Window Mode `Super + 8`
 
