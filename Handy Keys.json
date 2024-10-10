@@ -255,42 +255,6 @@
             },
             {
                 "type": 1,
-                "code": 7,
-                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "if_eq($mode,None, set(rmode, None))\n.if_eq($mode,1, set(rmode, 1))\n.if_eq($mode,2, set(rmode, 2))\n.set(mode, None)",
-        "name": "Mode: Default",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 58,
-                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
-            },
-            {
-                "type": 1,
-                "code": 8,
-                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "if_eq($mode,None, set(rmode, None))\n.if_eq($mode,1, set(rmode, 1))\n.if_eq($mode,2, set(rmode, 2))\n.set(mode, 1)",
-        "name": "Mode: Alacritty",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 58,
-                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
-            },
-            {
-                "type": 1,
                 "code": 52,
                 "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
             }
@@ -308,7 +272,7 @@
             },
             {
                 "type": 1,
-                "code": 9,
+                "code": 10,
                 "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
             }
         ],
@@ -326,12 +290,48 @@
             },
             {
                 "type": 1,
+                "code": 9,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "if_eq($mode,None, set(rmode, None))\n.if_eq($mode,1, set(rmode, 1))\n.if_eq($mode,2, set(rmode, 2))\n.set(mode, 1)",
+        "name": "Mode: Alacritty",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 8,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "if_eq($mode,None, set(rmode, None))\n.if_eq($mode,1, set(rmode, 1))\n.if_eq($mode,2, set(rmode, 2))\n.set(mode, None)",
+        "name": "Mode: Default",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
                 "code": 33,
                 "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "if_eq($rmode,None, set(tmode, None))\n.if_eq($rmode,1, set(tmode, 1))\n.if_eq($rmode,2, set(tmode, 2))\n.if_eq($mode,None, set(rmode, None))\n.if_eq($mode,1, set(rmode, 1))\n.if_eq($mode,2, set(rmode, 2))\n.if_eq($tmode,None, set(mode, None))\n.if_eq($tmode,1, set(mode, 1))\n.if_eq($tmode,2, set(mode, 2))",
+        "output_symbol": "if_eq($rmode, None, set(tmode, None))\n.if_eq($rmode, 1, set(tmode, 1))\n.if_eq($rmode, 2, set(tmode, 2))\n.if_eq($mode, None, set(rmode, None))\n.if_eq($mode, 1, set(rmode, 1))\n.if_eq($mode, 2, set(rmode, 2))\n.if_eq($tmode, None, set(mode, None))\n.if_eq($tmode, 1, set(mode, 1))\n.if_eq($tmode, 2, set(mode, 2))",
         "name": "Toggle recent mode",
         "mapping_type": "key_macro"
     }
