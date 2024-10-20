@@ -13,7 +13,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "# Default, VIM: Fix format problem\nif_eq(\n\t$mode,\n\tNone,\n\tkey(Escape)\n\t.key(j).\n\trepeat(2, modify(Shift_L,key(comma)))\n\t.key(k)\n\t.repeat(2, key(d))\n\t.key(k)\n\t.modify(Shift_R, key(4))\n\t.key(a)\n\t.key(Return)\n)\n# Alacritty, Jump to left pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KP_Up))\n)\n# Lazy Window, Expend height\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).modify(Shift_L, key(equal))\n)",
+        "output_symbol": "# Default, VIM: Fix format problem\nif_eq(\n\t$mode,\n\tNone,\n\tkey(Escape)\n\t.key(j).\n\trepeat(2, modify(Shift_L,key(comma)))\n\t.key(k)\n\t.repeat(2, key(d))\n\t.key(k)\n\t.modify(Shift_R, key(4))\n\t.key(a)\n\t.key(Return)\n)\n# Alacritty, Jump to Up pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KEY_UP))\n)\n# Lazy Window, Expend height\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).modify(Shift_L, key(equal))\n)",
         "name": "",
         "mapping_type": "key_macro"
     },
@@ -31,7 +31,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "# Default, Toggle first work space and second work space\nif_eq(\n\t$mode,\n\tNone,\n\tset(space3active, 0)\n\t.if_eq(\n\t\t$space,\n\t\t2,\n\t\tset(space, 1).modify(Super_L, key(1)),\n\t\tset(space, 2).modify(Super_L, key(2))\n\t)\n)\n# Alacritty, Jump to down pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KP_Down))\n)\n# Lazy Window, Shrink height\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).key(minus)\n)",
+        "output_symbol": "# Default, Toggle first work space and second work space\nif_eq(\n\t$mode,\n\tNone,\n\tset(space3active, 0)\n\t.if_eq(\n\t\t$space,\n\t\t2,\n\t\tset(space, 1).modify(Super_L, key(1)),\n\t\tset(space, 2).modify(Super_L, key(2))\n\t)\n)\n# Alacritty, Jump to down pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KEY_DOWN))\n)\n# Lazy Window, Shrink height\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).key(minus)\n)",
         "name": "",
         "mapping_type": "key_macro"
     },
@@ -62,7 +62,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "# Default, VIM: Echo current file full name with path\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Shift_L, key(semicolon))\n\t.key(e).key(c).key(h).key(o)\n\t.key(space)\n\t.modify(Shift_L, key(2)).modify(Shift_L, key(5))\n\t.key(Return)\n)\n# Alacritty, Jump to left pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KP_Right))\n)",
+        "output_symbol": "# Default, VIM: Echo current file full name with path\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Shift_L, key(semicolon))\n\t.key(e).key(c).key(h).key(o)\n\t.key(space)\n\t.modify(Shift_L, key(2)).modify(Shift_L, key(5))\n\t.key(Return)\n)\n# Alacritty, Jump to left pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KEY_RIGHT))\n)",
         "name": "",
         "mapping_type": "key_macro"
     },
@@ -98,7 +98,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "# Default, VIM: Scroll half down\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Control_L, key(d))\n)\n# Alacritty, Jump to left pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KP_Left))\n)",
+        "output_symbol": "# Default, VIM: Scroll half down\nif_eq(\n\t$mode,\n\tNone,\n\tmodify(Control_L, key(d))\n)\n# Alacritty, Jump to left pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KEY_LEFT))\n)",
         "name": "",
         "mapping_type": "key_macro"
     },
