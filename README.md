@@ -12,12 +12,12 @@ I also use `Lazyvim` and most of the key configurations are specific for `Lazyvi
 only.
 
 - `CapsLock` = `Super` key
-- `Super + 6` = Switch to `Default Mode`
-- `Super + 7` = Switch to `Alacritty Mode`
-- `Super + 8` = Switch to `Lazyvim Window Mode`
+- `Super + 7` = Switch to `Default Mode`
+- `Super + 8` = Switch to `Alacritty Mode`
+- `Super + 9` = Switch to `Lazyvim Window Mode`
 - `Super + f` = Toggle recent mode
 
-## Default Mode `Super + 6`
+## Default Mode `Super + 7`
 
 | Mapping     | Description                                   |
 | ----------- | --------------------------------------------- |
@@ -34,8 +34,9 @@ only.
 | `Super + n` | Restart flutter                               |
 | `Super + m` | Reload flutter                                |
 | `Super + ,` | Save current buffer                           |
+| `Super + .` | Trigger backtick `                            |
 
-## Alacritty Mode `Super + 7`
+## Alacritty Mode `Super + 8`
 
 | Mapping     | Description                          |
 | ----------- | ------------------------------------ |
@@ -50,7 +51,7 @@ only.
 | `Super + k` | Jump to the down pane                |
 | `Super + j` | Jump to the top pane                 |
 
-## Lazyvim Window Mode `Super + 8`
+## Lazyvim Window Mode `Super + 9`
 
 | Mapping     | Description                          |
 | ----------- | ------------------------------------ |
