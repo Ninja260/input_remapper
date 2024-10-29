@@ -260,7 +260,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "# Alacritty, Expend current pane\nif_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(equal))\n)\n# Lazy Window, Shrink width\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).modify(Shift_L, key(period))\n)",
+        "output_symbol": "# Default, backtick\nif_eq(\n\t$mode,\n\tNone,\n\tkey(grave)\n)\n# Alacritty, Expend current pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(equal))\n)\n# Lazy Window, Shrink width\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).modify(Shift_L, key(period))\n)",
         "mapping_type": "key_macro"
     },
     {
