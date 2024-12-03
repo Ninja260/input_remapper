@@ -206,7 +206,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "# Default, Toggle thrid workspace and recent workspace\nif_eq(\n\t$mode,\n\tNone,\n\tif_eq($space, None, set(space, 1))\n\t.if_eq(\n\t\t$space3active,\n\t\t1,\n\t\tset(space3active, 0).modify(Super_L, key($space)),\n\t\tset(space3active, 1).modify(Super_L, key(3))\n\t)\n)",
+        "output_symbol": "# Default, Toggle thrid workspace and recent workspace\nif_eq(\n\t$mode,\n\tNone,\n\tif_eq($space, None, set(space, 1))\n\t.if_eq(\n\t\t$space3active,\n\t\t1,\n\t\tset(space3active, 0).modify(Super_L, key($space)),\n\t\tset(space3active, 1).modify(Super_L, key(3))\n\t)\n)\n# Alacritty, close currente pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Control_L, key(t)).key(x)\n)",
         "name": "",
         "mapping_type": "key_macro"
     },

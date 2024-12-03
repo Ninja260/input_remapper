@@ -50,6 +50,7 @@ only.
 | `Super + l` | Jump to the right pane or tab        |
 | `Super + k` | Jump to the down pane                |
 | `Super + j` | Jump to the top pane                 |
+| `Super + ;` | Close the current pane               |
 
 ## Lazyvim Window Mode `Super + 9`
 
