@@ -334,5 +334,77 @@
         "output_symbol": "if_eq($rmode, None, set(tmode, None))\n.if_eq($rmode, 1, set(tmode, 1))\n.if_eq($rmode, 2, set(tmode, 2))\n.if_eq($mode, None, set(rmode, None))\n.if_eq($mode, 1, set(rmode, 1))\n.if_eq($mode, 2, set(rmode, 2))\n.if_eq($tmode, None, set(mode, None))\n.if_eq($tmode, 1, set(mode, 1))\n.if_eq($tmode, 2, set(mode, 2))",
         "name": "Toggle recent mode",
         "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "748e31550c24fc009038438dc4fce338"
+            },
+            {
+                "type": 1,
+                "code": 47,
+                "origin_hash": "748e31550c24fc009038438dc4fce338"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "key(Escape)",
+        "name": "Escape Remap",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "748e31550c24fc009038438dc4fce338"
+            },
+            {
+                "type": 1,
+                "code": 57,
+                "origin_hash": "748e31550c24fc009038438dc4fce338"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(space))",
+        "name": "Trigger Suggestion",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "748e31550c24fc009038438dc4fce338"
+            },
+            {
+                "type": 1,
+                "code": 17,
+                "origin_hash": "748e31550c24fc009038438dc4fce338"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(w))",
+        "name": "Trigger Ctrl + w",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 30,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "hold_keys(Control_L, Super_L, space)",
+        "name": "Switch Keyboard Layout",
+        "mapping_type": "key_macro"
     }
 ]
