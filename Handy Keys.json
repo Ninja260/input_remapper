@@ -13,7 +13,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "# Default, VIM: Fix format problem\nif_eq(\n\t$mode,\n\tNone,\n\tkey(Escape)\n\t.key(j).\n\trepeat(2, modify(Shift_L,key(comma)))\n\t.key(k)\n\t.repeat(2, key(d))\n\t.key(k)\n\t.modify(Shift_R, key(4))\n\t.key(a)\n\t.key(Return)\n)\n# Alacritty, Jump to Up pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KEY_UP))\n)\n# Lazy Window, Expend height\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).modify(Shift_L, key(equal))\n)",
+        "output_symbol": "# Default, Triger Ctrl + Shift + I\nif_eq(\n\t$mode,\n\tNone,\n\thold_keys(Control_L, Shift_L, i)\n)\n# Alacritty, Jump to Up pane\n.if_eq(\n\t$mode,\n\t1,\n\tmodify(Alt_L, key(KEY_UP))\n)\n# Lazy Window, Expend height\n.if_eq(\n\t$mode,\n\t2,\n\tkey(5).key(space).key(w).modify(Shift_L, key(equal))\n)",
         "name": "",
         "mapping_type": "key_macro"
     },
@@ -423,6 +423,60 @@
         "target_uinput": "keyboard",
         "output_symbol": "modify(Control_L, key(KEY_PAGEUP))",
         "name": "Trigger Ctrl + PgUp",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "748e31550c24fc009038438dc4fce338"
+            },
+            {
+                "type": 1,
+                "code": 18,
+                "origin_hash": "748e31550c24fc009038438dc4fce338"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(e))",
+        "name": "Trigger Ctrl + e",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 26,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "key(KP_Up)",
+        "name": "Trigger upArrow",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 27,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "key(KP_Down)",
+        "name": "Trigger downArrow",
         "mapping_type": "key_macro"
     }
 ]
