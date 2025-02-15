@@ -457,7 +457,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "key(KP_Up)",
+        "output_symbol": "key(KEY_UP)",
         "name": "Trigger upArrow",
         "mapping_type": "key_macro"
     },
@@ -475,7 +475,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "key(KP_Down)",
+        "output_symbol": "key(KEY_DOWN)",
         "name": "Trigger downArrow",
         "mapping_type": "key_macro"
     }
