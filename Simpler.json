@@ -1,0 +1,284 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "disable",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 36,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "set(space3active, 0)\n.if_eq(\n\t$space,\n\t2,\n\tset(space, 1).modify(Super_L, key(1)),\n\tset(space, 2).modify(Super_L, key(2))\n)",
+        "name": "Work Space 1 Toggle",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 39,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "if_eq($space, None, set(space, 1))\n.if_eq(\n\t$space3active,\n\t1,\n\tset(space3active, 0).modify(Super_L, key($space)),\n\tset(space3active, 1).modify(Super_L, key(3))\n)",
+        "name": "Work Space 3 Toggle",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 30,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "hold_keys(Control_L, Super_L, space)",
+        "name": "Switch Keyboard Layout",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 31,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(KEY_PAGEUP))",
+        "name": "Trigger Ctrl + Page Up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 23,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(i))",
+        "name": "Trigger Ctrl + i",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 24,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(o))",
+        "name": "Trigger Ctrl + o",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 21,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "hold_keys(KEY_LEFTCTRL, KEY_U)",
+        "name": "Scroll Half Up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 35,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "hold_keys(KEY_LEFTCTRL, KEY_D)",
+        "name": "Scroll Half Down",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 17,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(w))",
+        "name": "Trigger Ctrl + w",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 57,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L, key(space))",
+        "name": "Trigger Suggestion",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 52,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "key(grave)",
+        "name": "Trigger Backtick",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 51,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Shift_L, key(semicolon))\n\t.key(w)\n\t.key(Return)",
+        "name": "Write File",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 26,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "key(KEY_UP)",
+        "name": "Trigger Arrow Up",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 27,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "key(KEY_DOWN)",
+        "name": "Trigger Arrow Down",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            },
+            {
+                "type": 1,
+                "code": 25,
+                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Control_L,key(p))",
+        "name": "Trigger Ctrl + p",
+        "mapping_type": "key_macro"
+    }
+]
