@@ -280,5 +280,23 @@
         "output_symbol": "modify(Control_L,key(p))",
         "name": "Trigger Ctrl + p",
         "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+            },
+            {
+                "type": 1,
+                "code": 47,
+                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "key(Escape)",
+        "name": "Trigger Escape",
+        "mapping_type": "key_macro"
     }
 ]
