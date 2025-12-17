@@ -20,42 +20,6 @@
             },
             {
                 "type": 1,
-                "code": 36,
-                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "set(space3active, 0)\n.if_eq(\n\t$space,\n\t2,\n\tset(space, 1).modify(Super_L, key(1)),\n\tset(space, 2).modify(Super_L, key(2))\n)",
-        "name": "Work Space 1 Toggle",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 58,
-                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
-            },
-            {
-                "type": 1,
-                "code": 39,
-                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "if_eq($space, None, set(space, 1))\n.if_eq(\n\t$space3active,\n\t1,\n\tset(space3active, 0).modify(Super_L, key($space)),\n\tset(space3active, 1).modify(Super_L, key(3))\n)",
-        "name": "Work Space 3 Toggle",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 58,
-                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
-            },
-            {
-                "type": 1,
                 "code": 30,
                 "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
             }
@@ -133,7 +97,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "hold_keys(KEY_LEFTCTRL, KEY_U)",
+        "output_symbol": "hold_keys(KEY_LEFTCTRL, KEY_F)",
         "name": "Scroll Half Up",
         "mapping_type": "key_macro"
     },
@@ -151,7 +115,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "hold_keys(KEY_LEFTCTRL, KEY_D)",
+        "output_symbol": "hold_keys(KEY_LEFTCTRL, KEY_H)",
         "name": "Scroll Half Down",
         "mapping_type": "key_macro"
     },
@@ -207,24 +171,6 @@
         "target_uinput": "keyboard",
         "output_symbol": "key(grave)",
         "name": "Trigger Backtick",
-        "mapping_type": "key_macro"
-    },
-    {
-        "input_combination": [
-            {
-                "type": 1,
-                "code": 58,
-                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
-            },
-            {
-                "type": 1,
-                "code": 51,
-                "origin_hash": "96ccd9e83f7bbdb29e7c355401120973"
-            }
-        ],
-        "target_uinput": "keyboard",
-        "output_symbol": "modify(Shift_L, key(semicolon))\n\t.key(w)\n\t.key(Return)",
-        "name": "Write File",
         "mapping_type": "key_macro"
     },
     {
@@ -297,6 +243,60 @@
         "target_uinput": "keyboard",
         "output_symbol": "key(Escape)",
         "name": "Trigger Escape",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+            },
+            {
+                "type": 1,
+                "code": 51,
+                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "modify(Shift_L, key(KEY_Z))\n\t.key(KEY_COMMA)\n\t.key(Return)",
+        "name": "Write File",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+            },
+            {
+                "type": 1,
+                "code": 36,
+                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "set(space3active, 0)\n.if_eq(\n\t$space,\n\t2,\n\tset(space, 1).modify(Super_L, key(1)),\n\tset(space, 2).modify(Super_L, key(2))\n)",
+        "name": "Work Space 1 Toggle",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 58,
+                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+            },
+            {
+                "type": 1,
+                "code": 37,
+                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "if_eq($space, None, set(space, 1))\n.if_eq(\n\t$space3active,\n\t1,\n\tset(space3active, 0).modify(Super_L, key($space)),\n\tset(space3active, 1).modify(Super_L, key(3))\n)",
+        "name": "Work Space 3 Toggle",
         "mapping_type": "key_macro"
     }
 ]
