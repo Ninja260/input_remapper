@@ -286,12 +286,12 @@
             {
                 "type": 1,
                 "code": 58,
-                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+                "origin_hash": "384a35c02b3a82bc4756d292e2c41d23"
             },
             {
                 "type": 1,
-                "code": 37,
-                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+                "code": 39,
+                "origin_hash": "384a35c02b3a82bc4756d292e2c41d23"
             }
         ],
         "target_uinput": "keyboard",
