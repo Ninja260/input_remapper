@@ -298,5 +298,18 @@
         "output_symbol": "if_eq($space, None, set(space, 1))\n.if_eq(\n\t$space3active,\n\t1,\n\tset(space3active, 0).modify(Super_L, key($space)),\n\tset(space3active, 1).modify(Super_L, key(3))\n)",
         "name": "Work Space 3 Toggle",
         "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 94,
+                "origin_hash": "b3c0f4d3f4a38edaf2fe2d65a00e2589"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "key(Super_L)",
+        "name": "Trigger Super",
+        "mapping_type": "key_macro"
     }
 ]
